@@ -2,11 +2,9 @@
 name: rsync
 no-autogen: true
 config-opts:
-  - "--prefix=${FLATPAK_DEST}"
-  - "--with-included-popt"
-  - "--with-included-zlib"
-  - "--disable-xxhash" # Couldn't meet the dependancy
-
+  - --prefix=${FLATPAK_DEST}
+  - --with-included-popt
+  - --with-included-zlib
 sources:
   - type: archive
     url: https://download.samba.org/pub/rsync/src/rsync-3.2.4.tar.gz
@@ -16,6 +14,14 @@ sources:
       project-id: 4217
       stable-only: true
       url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
-  
 cleanup:
   - /share/man
+modules:
+  - name: xxhash
+    buildsystem: simple
+    build-commands:
+      - make all
+    sources:
+      - type: git
+        url: https://github.com/Cyan4973/xxHash.git
+        tag: v0.8.1

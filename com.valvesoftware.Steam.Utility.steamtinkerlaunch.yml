@@ -28,6 +28,7 @@ modules:
   - modules/innoextract.yml
   - modules/jq.yml
   - modules/pev.yml
+  - modules/xxhash.yml
   - modules/rsync.yml
   - modules/xdotool.yml
   - modules/xprop.yml
