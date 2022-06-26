@@ -1,13 +1,12 @@
----
 name: xxd
 buildsystem: simple
 build-commands:
-    - make -C src/xxd
-    - install -Dm755 -t "${FLATPAK_DEST}/bin" src/xxd/xxd
+  - make -C src/xxd
+  - install -Dm755 -t "${FLATPAK_DEST}/bin" src/xxd/xxd
 sources:
   - type: archive
-    url: https://github.com/vim/vim/archive/v8.2.4959/vim-v8.2.4959.tar.gz
-    sha256: 7fe9a666c252d3f5fb635a752d15758a4e7df836985ec214be549cb326474296
+    url: https://github.com/vim/vim/archive/v8.2.5161/vim-v8.2.5161.tar.gz
+    sha256: 84e4eda43f77190c714ce89d1400a52bf836ca9976db6262e6813766ff5531f7
     x-checker-data:
       type: anitya
       project-id: 5092
