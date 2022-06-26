@@ -7,9 +7,13 @@ build-options:
 build-commands:
   - make prefix=${FLATPAK_DEST}
   - make prefix=${FLATPAK_DEST} install
-
 sources:
   - type: git
     url: https://github.com/merces/pev/
     tag: v0.81
     commit: 095c19012cddf8d5b9e3a4a90e2f9584f1ad56bd
+    x-checker-data:
+      type: anitya
+      project-id: 141663
+      stable-only: true
+      tag-template: v$version

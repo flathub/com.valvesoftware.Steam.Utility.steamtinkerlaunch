@@ -5,6 +5,11 @@ sources:
   - type: archive
     url: https://github.com/dscharrer/innoextract/releases/download/1.9/innoextract-1.9.tar.gz
     sha256: 6344a69fc1ed847d4ed3e272e0da5998948c6b828cb7af39c6321aba6cf88126
+    x-checker-data:
+      type: anitya
+      project-id: 8646
+      stable-only: true
+      url-template: https://github.com/dscharrer/innoextract/releases/download/$version/innoextract-$version.tar.gz
 modules:
   - name: boost
     buildsystem: simple
@@ -15,6 +20,11 @@ modules:
       - type: archive
         url: https://boostorg.jfrog.io/artifactory/main/release/1.79.0/source/boost_1_79_0.tar.gz
         sha256: 273f1be93238a068aba4f9735a4a2b003019af067b9c183ed227780b8f36062c
+        x-checker-data:
+          type: anitya
+          project-id: 6845
+          stable-only: true
+          url-template: https://boostorg.jfrog.io/artifactory/main/release/$version/source/boost_$major_$minor_$patch.tar.gz
     cleanup:
       - /include
       - /lib/*.a

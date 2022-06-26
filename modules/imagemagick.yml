@@ -10,6 +10,11 @@ sources:
   - type: archive
     url: https://github.com/ImageMagick/ImageMagick/archive/7.1.0-37.tar.gz
     sha256: a54888a1a46dbb808705a3e6c6b5ecb93ee30189a8ae6ea0f02300a0ab0d0996
+    x-checker-data:
+      type: anitya
+      project-id: 1372
+      stable-only: true
+      url-template: https://github.com/ImageMagick/ImageMagick/archive/$version.tar.gz
 cleanup:
   - /bin/*-config
   - /share/doc
