@@ -12,10 +12,17 @@
   <categories>
     <category>Game</category>
   </categories>
-  <icon type="remote" height="64" width="64">https://github.com/frostworx/repo-assets/raw/master/pics/steamtinkerlaunch-logo_64px.png</icon>
+  <icon type="remote" height="64" width="64">https://raw.githubusercontent.com/frostworx/steamtinkerlaunch/master/misc/steamtinkerlaunch.svg</icon>
+  <icon type="remote" height="128" width="128">https://raw.githubusercontent.com/frostworx/steamtinkerlaunch/master/misc/steamtinkerlaunch.svg</icon>
   <url type="homepage">https://github.com/frostworx/steamtinkerlaunch</url>
   <url type="help">https://github.com/frostworx/steamtinkerlaunch/wiki</url>
   <url type="bugtracker">https://github.com/frostworx/steamtinkerlaunch/issues</url>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Example of a game's main menu window.</caption>
+      <image>https://github.com/frostworx/repo-assets/raw/master/pics/Main-Menu.jpg</image>
+    </screenshot>
+  </screenshots>
   <releases>
     <release version="10.0" date="2022-04-09"/>
     <release version="9.2" date="2022-03-02"/>
