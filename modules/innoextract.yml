@@ -26,6 +26,4 @@ modules:
           stable-only: true
           url-template: https://boostorg.jfrog.io/artifactory/main/release/$version/source/boost_${major}_${minor}_${patch}.tar.gz
     cleanup:
-      - /include
-      - /lib/*.a
       - /lib/cmake

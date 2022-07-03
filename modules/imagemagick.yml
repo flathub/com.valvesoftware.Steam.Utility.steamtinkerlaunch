@@ -16,4 +16,3 @@ sources:
       url-template: https://github.com/ImageMagick/ImageMagick/archive/$version.tar.gz
 cleanup:
   - /bin/*-config
-  - /share/doc

@@ -15,5 +15,3 @@ sources:
       project-id: 8648
       stable-only: true
       url-template: https://github.com/jordansissel/xdotool/archive/v$version/xdotool-$version.tar.gz
-cleanup:
-  - /share/man

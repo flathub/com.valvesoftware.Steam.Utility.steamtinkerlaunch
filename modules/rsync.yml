@@ -31,5 +31,3 @@ sources:
 #          project-id: 17583
 #          stable-only: true
 #          tag-template: v$version
-cleanup:
-  - /share/man
