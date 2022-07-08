@@ -4,9 +4,9 @@
   <extends>com.valvesoftware.Steam</extends>
   <name>SteamTinkerLaunch</name>
   <developer_name>frostworx</developer_name>
-  <summary>Linux wrapper tool for use with the Steam client for custom launch options and 3rd party applications</summary>
+  <summary>Linux wrapper tool for use with the Flatpak Steam client allowing use of custom launch options and 3rd party applications</summary>
   <description>
-    <p>Steam Tinker Launch is a Linux wrapper tool for use with the Steam client which allows customizing and start tools and options for games quickly on the fly.</p>
+    <p>Steam Tinker Launch is a Linux wrapper tool for use with the Steam client which allows customising start tools and options for games quickly on the fly.</p>
     <p>By using a versatile configuration structure it is both easy to set up and flexible.</p>
   </description>
   <categories>
