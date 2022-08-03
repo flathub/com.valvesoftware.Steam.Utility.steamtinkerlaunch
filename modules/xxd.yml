@@ -5,8 +5,8 @@ build-commands:
   - install -Dm755 -t "${FLATPAK_DEST}/bin" src/xxd/xxd
 sources:
   - type: archive
-    url: https://github.com/vim/vim/archive/v9.0.0103/vim-v9.0.0103.tar.gz
-    sha256: d0dad3a20bf712a8b1c4f755cb5266e11aa0a8feed77b66a8c76220607070a4d
+    url: https://github.com/vim/vim/archive/v9.0.0135/vim-v9.0.0135.tar.gz
+    sha256: b47690d77a8262d3115bea608fbf27f6ed122b49fc7765fb2cbf7d122d250d8f
     x-checker-data:
       type: anitya
       project-id: 5092
