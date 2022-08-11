@@ -1,4 +1,3 @@
----
 name: innoextract
 buildsystem: cmake-ninja
 sources:
@@ -18,8 +17,8 @@ modules:
       - ./b2 -j$FLATPAK_BUILDER_N_JOBS install
     sources:
       - type: archive
-        url: https://boostorg.jfrog.io/artifactory/main/release/1.79.0/source/boost_1_79_0.tar.gz
-        sha256: 273f1be93238a068aba4f9735a4a2b003019af067b9c183ed227780b8f36062c
+        url: https://boostorg.jfrog.io/artifactory/main/release/1.80.0/source/boost_1_80_0.tar.gz
+        sha256: 4b2136f98bdd1f5857f1c3dea9ac2018effe65286cf251534b6ae20cc45e1847
         x-checker-data:
           type: anitya
           project-id: 6845
