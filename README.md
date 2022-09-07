@@ -7,7 +7,7 @@ Flatpak for [SteamTinkerLaunch](https://github.com/frostworx/steamtinkerlaunch/)
 `flatpak install com.valvesoftware.Steam.Utility.steamtinkerlaunch`
 
 ## Usage
-[Read the SteamTinkerLaunch Flatpak Wiki page](https://github.com/frostworx/steamtinkerlaunch/wiki/Flatpak)
+[Read the SteamTinkerLaunch Flatpak Wiki page](https://github.com/frostworx/steamtinkerlaunch/wiki/Steam-Flatpak)
 
 ## Uninstall
 
