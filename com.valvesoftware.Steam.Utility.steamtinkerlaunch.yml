@@ -23,6 +23,7 @@ cleanup:
   - /share/man
 
 modules:
+  - modules/cabextract.yml
   - modules/git.yml
   - modules/imagemagick.yml
   - modules/innoextract.yml
