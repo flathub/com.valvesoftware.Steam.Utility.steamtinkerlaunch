@@ -47,7 +47,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/frostworx/steamtinkerlaunch/
-        sha256: 935380f4e8284fb17ab5333330fca71439ac9b11
+        commit: 935380f4e8284fb17ab5333330fca71439ac9b11
       - type: file
         path: SteamTinkerLaunch.vdf
       - type: file
