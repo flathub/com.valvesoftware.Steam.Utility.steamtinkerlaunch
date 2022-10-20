@@ -3,7 +3,7 @@
   <id>com.valvesoftware.Steam.Utility.steamtinkerlaunch</id>
   <extends>com.valvesoftware.Steam</extends>
   <name>SteamTinkerLaunch</name>
-  <developer_name>frostworx</developer_name>
+  <developer_name>sonic2kk</developer_name>
   <summary>Linux wrapper tool for use with the Flatpak Steam client allowing use of custom launch options and 3rd party applications</summary>
   <description>
     <p>Steam Tinker Launch is a Linux wrapper tool for use with the Steam client which allows customising start tools and options for games quickly on the fly.</p>
@@ -12,15 +12,15 @@
   <categories>
     <category>Game</category>
   </categories>
-  <icon type="remote" height="64" width="64">https://raw.githubusercontent.com/frostworx/steamtinkerlaunch/master/misc/steamtinkerlaunch.svg</icon>
-  <icon type="remote" height="128" width="128">https://raw.githubusercontent.com/frostworx/steamtinkerlaunch/master/misc/steamtinkerlaunch.svg</icon>
-  <url type="homepage">https://github.com/frostworx/steamtinkerlaunch</url>
-  <url type="help">https://github.com/frostworx/steamtinkerlaunch/wiki</url>
-  <url type="bugtracker">https://github.com/frostworx/steamtinkerlaunch/issues</url>
+  <icon type="remote" height="64" width="64">https://raw.githubusercontent.com/sonic2kk/steamtinkerlaunch/master/misc/steamtinkerlaunch.svg</icon>
+  <icon type="remote" height="128" width="128">https://raw.githubusercontent.com/sonic2kk/steamtinkerlaunch/master/misc/steamtinkerlaunch.svg</icon>
+  <url type="homepage">https://github.com/sonic2kk/steamtinkerlaunch</url>
+  <url type="help">https://github.com/sonic2kk/steamtinkerlaunch/wiki</url>
+  <url type="bugtracker">https://github.com/sonic2kk/steamtinkerlaunch/issues</url>
   <screenshots>
     <screenshot type="default">
       <caption>Example of a game's main menu window</caption>
-      <image>https://github.com/frostworx/repo-assets/raw/master/pics/Main-Menu.jpg</image>
+      <image>https://user-images.githubusercontent.com/7917345/186237765-8803c246-a025-413b-be8c-f2c13243291d.png</image>
     </screenshot>
   </screenshots>
   <releases>
