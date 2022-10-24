@@ -4,11 +4,11 @@
   <extends>com.valvesoftware.Steam</extends>
   <name>SteamTinkerLaunch</name>
   <developer_name>sonic2kk</developer_name>
-  <summary>Linux wrapper tool for use with the Flatpak Steam client allowing use of custom launch options and 3rd party applications</summary>
+  <summary>Linux wrapper tool for the Flatpak Steam client allowing use of custom launch options and 3rd party applications</summary>
   <description>
-    <p>A Linux wrapper tool for use with the Flatpak Steam client which allows customising start tools and options for games quickly on the fly.</p>
+    <p>A tool for use with the Flatpak Steam client which allows customising start tools and options for games quickly on the fly.</p>
     <p>By using a versatile configuration structure it is both easy to set up and flexible.</p>
-    <p>Please be aware this <em>does not work</em> on Steam Deck. To find out how to use on Steam Deck please visit the wiki.</p>
+    <p>Please be aware this does not work on Steam Deck. To find out how to use on Steam Deck please visit the wiki.</p>
   </description>
   <categories>
     <category>Game</category>
