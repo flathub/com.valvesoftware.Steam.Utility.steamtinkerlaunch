@@ -1,6 +1,8 @@
 # com.valvesoftware.Steam.Utility.steamtinkerlaunch
 
-Flatpak for [SteamTinkerLaunch](https://github.com/sonic2kk/steamtinkerlaunch/)
+Flatpak for [SteamTinkerLaunch](https://github.com/sonic2kk/steamtinkerlaunch/).
+
+Only for use with Flatpak Steam. Does not work on Steam Deck.
 
 ## Install
 
