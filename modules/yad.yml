@@ -1,4 +1,3 @@
----
 name: yad
 config-opts:
   - --enable-standalone
@@ -6,8 +5,8 @@ config-opts:
   - --disable-tools
 sources:
   - type: archive
-    url: https://github.com/v1cont/yad/releases/download/v12.0/yad-12.0.tar.xz
-    sha256: 65dbfa72a229f6cbd131470caf4f70fec98fe935a1436acb58c841fa2a8bddde
+    url: https://github.com/v1cont/yad/releases/download/v12.2/yad-12.2.tar.xz
+    sha256: e490f3e149d05957969a9b2776a7c5cdfe00516fe31cf37c5e2bf2dde65238de
     x-checker-data:
       type: anitya
       project-id: 5280
@@ -18,7 +17,7 @@ cleanup:
 modules:
   - name: intltool
     cleanup:
-      - "*"
+      - '*'
     sources:
       - type: archive
         url: https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz

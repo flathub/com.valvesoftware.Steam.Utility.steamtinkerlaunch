@@ -46,7 +46,7 @@ modules:
       - install -Dm644 -t ${FLATPAK_DEST} toolmanifest.vdf
     sources:
       - type: git
-        url: https://github.com/frostworx/steamtinkerlaunch/
+        url: https://github.com/sonic2kk/steamtinkerlaunch/
         commit: 935380f4e8284fb17ab5333330fca71439ac9b11
       - type: file
         path: SteamTinkerLaunch.vdf
