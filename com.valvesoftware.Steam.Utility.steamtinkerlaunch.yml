@@ -48,7 +48,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/sonic2kk/steamtinkerlaunch/
-        commit: e7c5ada0744388852c0e4ee3b3244e48d611e1ef
+        commit: 9de3341508fc8dcdb8414d1009e63f40e40d05c1
       - type: file
         path: SteamTinkerLaunch.vdf
       - type: file
