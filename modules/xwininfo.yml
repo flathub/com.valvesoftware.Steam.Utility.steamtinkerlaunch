@@ -1,11 +1,10 @@
----
 name: xwininfo
 sources:
   - type: archive
-    url: https://xorg.freedesktop.org/archive/individual/app/xwininfo-1.1.5.tar.bz2
-    sha256: 7a405441dfc476666c744f5fcd1bc8a75abf8b5b1d85db7b88b370982365080e
+    url: https://xorg.freedesktop.org/archive/individual/app/xwininfo-1.1.5.tar.gz
+    sha256: aaa915909bb509320c3c775c79babaccc063fd3edc39e520a3c0352e265e9f58
     x-checker-data:
       type: anitya
       project-id: 14949
       stable-only: true
-      url-template: https://xorg.freedesktop.org/archive/individual/app/xwininfo-$version.tar.bz2
+      url-template: https://xorg.freedesktop.org/archive/individual/app/xwininfo-$version.tar.gz
