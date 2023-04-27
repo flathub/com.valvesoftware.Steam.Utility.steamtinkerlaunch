@@ -27,6 +27,7 @@ modules:
   - modules/imagemagick.yml
   - modules/innoextract.yml
   - modules/jq.yml
+  - modules/p7zip.yml
   - modules/pev.yml
   - modules/rsync.yml
   - modules/xdotool.yml
@@ -47,7 +48,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/sonic2kk/steamtinkerlaunch/
-        commit: f819ea4b9793002ebf707163af15fe576bd2bec5
+        commit: d7701e4ea363d7d7b72bcc8f4e3aa1cf289e1719
       - type: file
         path: SteamTinkerLaunch.vdf
       - type: file
