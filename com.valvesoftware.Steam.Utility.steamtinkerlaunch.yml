@@ -1,5 +1,5 @@
 id: com.valvesoftware.Steam.Utility.steamtinkerlaunch
-sdk: org.freedesktop.Sdk//22.08
+sdk: org.freedesktop.Sdk//23.08
 runtime: com.valvesoftware.Steam
 runtime-version: stable
 build-extension: true
@@ -48,7 +48,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/sonic2kk/steamtinkerlaunch/
-        commit: bb8142c89eafbd50b0d12b3b60dd29c37a1a3b73
+        commit: 72ad1b338c2b8426ab57a1687bbc4d859edcebae
       - type: file
         path: SteamTinkerLaunch.vdf
       - type: file
