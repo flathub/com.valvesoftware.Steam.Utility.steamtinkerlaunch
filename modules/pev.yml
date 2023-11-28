@@ -10,7 +10,7 @@ sources:
   - type: git
     url: https://github.com/mentebinaria/readpe/
     tag: v0.83
-    commit: 4a87bc9fac83a334dd2d6c4f63e9a5172b1d5fc7
+    commit: 7f3c13649959747ec57db172da355038c3521e1e
     x-checker-data:
       type: git
       tag-pattern: ^v([\d.]+)$
