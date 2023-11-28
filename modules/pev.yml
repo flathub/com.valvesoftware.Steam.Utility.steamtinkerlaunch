@@ -9,8 +9,8 @@ build-commands:
 sources:
   - type: git
     url: https://github.com/mentebinaria/readpe/
-    tag: v0.82
-    commit: ad4d5a586f022f36b6b925a63ffd667cb729731d
+    tag: v0.83
+    commit: 4a87bc9fac83a334dd2d6c4f63e9a5172b1d5fc7
     x-checker-data:
       type: git
       tag-pattern: ^v([\d.]+)$
