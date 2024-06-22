@@ -3,8 +3,10 @@
   <id>com.valvesoftware.Steam.Utility.steamtinkerlaunch</id>
   <extends>com.valvesoftware.Steam</extends>
   <name>SteamTinkerLaunch</name>
-  <developer_name>sonic2kk</developer_name>
-  <summary>Linux wrapper tool for the Flatpak Steam client allowing use of custom launch options and 3rd party applications</summary>
+  <developer id="com.github.sonic2kk">
+    <name>sonic2kk</name>
+  </developer>
+  <summary>Tool for Flatpak Steam which allows custom launch options and 3rd party applications</summary>
   <description>
     <p>A tool for use with the Flatpak Steam client which allows customising start tools and options for games quickly on the fly.</p>
     <p>By using a versatile configuration structure it is both easy to set up and flexible.</p>
@@ -25,7 +27,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="14.0.20240617-1" date="2024-06-17"/>
+    <release version="14.0.20240617-1" date="2024-06-22"/>
     <release version="12.12" date="2023-03-14"/>
     <release version="12.00" date="2022-12-24"/>
     <release version="11.11" date="2022-09-22"/>
