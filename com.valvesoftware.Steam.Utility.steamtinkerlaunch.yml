@@ -45,7 +45,6 @@ modules:
       - make install
       - install -Dm644 -t ${FLATPAK_DEST}/share/steam/compatibilitytools.d/SteamTinkerLaunch compatibilitytool.vdf
       - install -Dm644 -t ${FLATPAK_DEST} toolmanifest.vdf
-      - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
     sources:
       - type: git
         url: https://github.com/sonic2kk/steamtinkerlaunch/
@@ -54,5 +53,12 @@ modules:
         path: compatibilitytool.vdf
       - type: file
         path: toolmanifest.vdf
+
+  - name: metadata
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
+      - appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak ${FLATPAK_ID}
+    sources:
       - type: file
         path: com.valvesoftware.Steam.Utility.steamtinkerlaunch.metainfo.xml

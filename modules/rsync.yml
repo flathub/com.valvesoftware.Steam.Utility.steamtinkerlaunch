@@ -1,7 +1,6 @@
 name: rsync
 no-autogen: true
 config-opts:
-  - --prefix=${FLATPAK_DEST}
   - --with-included-popt
   - --with-included-zlib
   - --disable-debug
