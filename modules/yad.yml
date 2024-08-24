@@ -5,8 +5,8 @@ config-opts:
   - --disable-tools
 sources:
   - type: archive
-    url: https://github.com/v1cont/yad/releases/download/v13.0/yad-13.0.tar.xz
-    sha256: 194198c4a58e20ceffd9a3206633c3726d962d7d4219edb77aeb748897403e34
+    url: https://github.com/v1cont/yad/releases/download/v14.1/yad-14.1.tar.xz
+    sha256: dde047a915cd8d3892c32b6ba031876f5cda673e01882c99613f043867c88133
     x-checker-data:
       type: anitya
       project-id: 5280
