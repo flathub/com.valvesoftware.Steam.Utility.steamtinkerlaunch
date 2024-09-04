@@ -4,7 +4,6 @@ config-opts:
   - --with-included-popt
   - --with-included-zlib
   - --disable-debug
-  - --disable-xxhash # Unable to meet dependency -- rsync refuses to see the required xxhash.h file
 sources:
   - type: archive
     url: https://download.samba.org/pub/rsync/src/rsync-3.3.0.tar.gz
@@ -14,18 +13,19 @@ sources:
       project-id: 4217
       stable-only: true
       url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
-#modules:
-#  - name: xxhash
-#    no-autogen: true
-#    make-install-args:
-#      - PREFIX=${FLATPAK_DEST}
-#    sources:
-#      - type: git
-#        url: https://github.com/Cyan4973/xxHash/
-#        tag: v0.8.1
-#        commit: 35b0373c697b5f160d3db26b1cbb45a0d5ba788c
-#        x-checker-data:
-#          type: anitya
-#          project-id: 17583
-#          stable-only: true
-#          tag-template: v$version
+modules:
+  - name: xxhash
+    no-autogen: true
+    make-install-args:
+      - PREFIX=${FLATPAK_DEST}
+      - DISPATCH=1
+    sources:
+      - type: git
+        url: https://github.com/Cyan4973/xxHash/
+        tag: v0.8.2
+        commit: bbb27a5efb85b92a0486cf361a8635715a53f6ba
+        x-checker-data:
+          type: anitya
+          project-id: 17583
+          stable-only: true
+          tag-template: v$version
