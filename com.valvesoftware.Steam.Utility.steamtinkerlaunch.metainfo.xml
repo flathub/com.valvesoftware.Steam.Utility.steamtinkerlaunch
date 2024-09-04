@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
   <id>com.valvesoftware.Steam.Utility.steamtinkerlaunch</id>
-  <extends>com.valvesoftware.Steam</extends>
+  <extends>
+    <id>com.valvesoftware.Steam</id>
+  </extends>
   <name>SteamTinkerLaunch</name>
   <developer id="com.github.sonic2kk">
     <name>sonic2kk</name>
@@ -15,6 +17,7 @@
   <categories>
     <category>Game</category>
   </categories>
+  <icon type="stock">steamtinkerlaunch</icon>
   <icon type="remote" height="64" width="64">https://raw.githubusercontent.com/sonic2kk/steamtinkerlaunch/master/misc/steamtinkerlaunch.svg</icon>
   <icon type="remote" height="128" width="128">https://raw.githubusercontent.com/sonic2kk/steamtinkerlaunch/master/misc/steamtinkerlaunch.svg</icon>
   <url type="homepage">https://github.com/sonic2kk/steamtinkerlaunch</url>
