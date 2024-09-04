@@ -1,9 +1,8 @@
 id: com.valvesoftware.Steam.Utility.steamtinkerlaunch
-sdk: org.freedesktop.Sdk//24.08beta
 runtime: com.valvesoftware.Steam
 runtime-version: stable
+sdk: org.freedesktop.Sdk//24.08beta
 build-extension: true
-appstream-compose: false
 separate-locales: false
 rename-icon: steamtinkerlaunch
 rename-desktop-file: steamtinkerlaunch.desktop
@@ -58,7 +57,6 @@ modules:
     buildsystem: simple
     build-commands:
       - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
-      - appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak ${FLATPAK_ID}
     sources:
       - type: file
         path: com.valvesoftware.Steam.Utility.steamtinkerlaunch.metainfo.xml
