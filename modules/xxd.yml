@@ -1,14 +1,24 @@
 name: xxd
 buildsystem: simple
 build-commands:
-  - make -C src/xxd
-  - install -Dm755 -t "${FLATPAK_DEST}/bin" src/xxd/xxd
+  - make
+  - install -Dm755 tinyxxd "${FLATPAK_DEST}/bin/xxd"
 sources:
   - type: archive
-    url: https://github.com/vim/vim/archive/v9.1.0386/vim-v9.1.0386.tar.gz
-    sha256: fd6f8aa0cf9c0bcda8be314f7f11daf368cadf514a7ae101320f2332d3b4a1f8
-    #x-checker-data:
-    #  type: anitya
-    #  project-id: 5092
-    #  stable-only: true
-    #  url-template: https://github.com/vim/vim/archive/v$version/vim-v$version.tar.gz
+    url: https://github.com/xyproto/tinyxxd/releases/download/v1.3.5/tinyxxd-1.3.5.tar.gz
+    sha256: fd700e42be1dc7a84663bb2a4f3f916f7326ff7f66a5dd64680bb413aa043b20
+    x-checker-data:
+      type: git
+      tag-pattern: ^v([\d.]+)$
+#build-commands:
+#  - make -C src/xxd
+#  - install -Dm755 -t "${FLATPAK_DEST}/bin" src/xxd/xxd
+#sources:
+#  - type: archive
+#    url: https://github.com/vim/vim/archive/v9.1.0386/vim-v9.1.0386.tar.gz
+#    sha256: fd6f8aa0cf9c0bcda8be314f7f11daf368cadf514a7ae101320f2332d3b4a1f8
+#    x-checker-data:
+#      type: anitya
+#      project-id: 5092
+#      stable-only: true
+#      url-template: https://github.com/vim/vim/archive/v$version/vim-v$version.tar.gz
