@@ -9,6 +9,9 @@ sources:
       project-id: 8646
       stable-only: true
       url-template: https://github.com/dscharrer/innoextract/releases/download/$version/innoextract-$version.tar.gz
+  # Patch innoextract failing to build with boost 1.85+: https://github.com/dscharrer/innoextract/pull/169/files
+  - type: patch
+    path: ../patches/innoextract.patch
 modules:
   - name: boost
     buildsystem: simple
@@ -17,8 +20,8 @@ modules:
       - ./b2 -j$FLATPAK_BUILDER_N_JOBS install
     sources:
       - type: archive
-        url: https://boostorg.jfrog.io/artifactory/main/release/1.83.0/source/boost_1_83_0.tar.gz
-        sha256: c0685b68dd44cc46574cce86c4e17c0f611b15e195be9848dfd0769a0a207628
+        url: https://boostorg.jfrog.io/artifactory/main/release/1.86.0/source/boost_1_86_0.tar.gz
+        sha256: 2575e74ffc3ef1cd0babac2c1ee8bdb5782a0ee672b1912da40e5b4b591ca01f
         x-checker-data:
           type: anitya
           project-id: 6845

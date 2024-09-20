@@ -1,10 +1,10 @@
 id: com.valvesoftware.Steam.Utility.steamtinkerlaunch
-sdk: org.freedesktop.Sdk//23.08
 runtime: com.valvesoftware.Steam
-runtime-version: stable
+runtime-version: beta
+sdk: org.freedesktop.Sdk//24.08
 build-extension: true
-appstream-compose: false
 separate-locales: false
+appstream-compose: false
 rename-icon: steamtinkerlaunch
 rename-desktop-file: steamtinkerlaunch.desktop
 
@@ -39,18 +39,18 @@ modules:
   - name: steamtinkerlaunch
     build-options:
       env:
-        PREFIX: /app/utils/steamtinkerlaunch
+        PREFIX: ${FLATPAK_DEST}
     buildsystem: simple
     build-commands:
       - make install
-      - install -Dm644 -t ${FLATPAK_DEST}/share/steam/compatibilitytools.d SteamTinkerLaunch.vdf
+      - install -Dm644 -t ${FLATPAK_DEST}/share/steam/compatibilitytools.d/SteamTinkerLaunch compatibilitytool.vdf
       - install -Dm644 -t ${FLATPAK_DEST} toolmanifest.vdf
     sources:
       - type: git
         url: https://github.com/sonic2kk/steamtinkerlaunch/
-        commit: 72ad1b338c2b8426ab57a1687bbc4d859edcebae
+        commit: c174a06f1b98d2aa523fe93e2afaed2713f46563
       - type: file
-        path: SteamTinkerLaunch.vdf
+        path: compatibilitytool.vdf
       - type: file
         path: toolmanifest.vdf
 
@@ -58,7 +58,7 @@ modules:
     buildsystem: simple
     build-commands:
       - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
-      - appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak ${FLATPAK_ID}
+      - appstreamcli compose --components=${FLATPAK_ID} --prefix=/ --origin=${FLATPAK_ID} --result-root=${FLATPAK_DEST} --data-dir=${FLATPAK_DEST}/share/app-info/xmls ${FLATPAK_DEST}
     sources:
       - type: file
         path: com.valvesoftware.Steam.Utility.steamtinkerlaunch.metainfo.xml
