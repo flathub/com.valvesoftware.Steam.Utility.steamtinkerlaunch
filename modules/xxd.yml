@@ -4,9 +4,10 @@ build-commands:
   - make
   - install -Dm755 tinyxxd "${FLATPAK_DEST}/bin/xxd"
 sources:
-  - type: archive
-    url: https://github.com/xyproto/tinyxxd/releases/download/v1.3.5/tinyxxd-1.3.5.tar.gz
-    sha256: fd700e42be1dc7a84663bb2a4f3f916f7326ff7f66a5dd64680bb413aa043b20
+  - type: git
+    url: https://github.com/xyproto/tinyxxd/
+    tag: v1.3.7
+    commit: 1c5b1336725ea2d9751df39019fe2f22b0522553
     x-checker-data:
       type: git
       tag-pattern: ^v([\d.]+)$
