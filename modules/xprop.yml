@@ -1,8 +1,8 @@
 name: xprop
 sources:
   - type: archive
-    url: https://xorg.freedesktop.org/archive/individual/app/xprop-1.2.7.tar.gz
-    sha256: 11c06a876b0aa0bfac6cbfe4b3ebe1f5062f8b39b9b1b6c136a8629265f134b6
+    url: https://xorg.freedesktop.org/archive/individual/app/xprop-1.2.8.tar.gz
+    sha256: a8394338c99775160d733d54d73cdcdc5c9c80a0dc8cffd5be1b7c977254b745
     x-checker-data:
       type: anitya
       project-id: 14958
