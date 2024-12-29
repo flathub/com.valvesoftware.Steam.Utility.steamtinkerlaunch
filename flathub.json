@@ -1,4 +1,5 @@
 {
+  "end-of-life": "The beta branch of com.valvesoftware.Steam.Utility.steamtinkerlaunch is no longer receiving updates. Please switch to the stable branch.",
   "only-arches": ["x86_64"],
   "skip-icons-check": true
 }
