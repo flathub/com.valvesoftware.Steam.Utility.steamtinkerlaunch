@@ -20,12 +20,12 @@ modules:
       - ./b2 -j$FLATPAK_BUILDER_N_JOBS install
     sources:
       - type: archive
-        url: https://boostorg.jfrog.io/artifactory/main/release/1.87.0/source/boost_1_87_0.tar.gz
+        url: https://archives.boost.io/release/1.87.0/source/boost_1_87_0.tar.gz
         sha256: f55c340aa49763b1925ccf02b2e83f35fdcf634c9d5164a2acb87540173c741d
         x-checker-data:
           type: anitya
           project-id: 6845
           stable-only: true
-          url-template: https://boostorg.jfrog.io/artifactory/main/release/$version/source/boost_${major}_${minor}_${patch}.tar.gz
+          url-template: https://archives.boost.io/release/$version/source/boost_${major}_${minor}_${patch}.tar.gz
     cleanup:
       - /lib/cmake
