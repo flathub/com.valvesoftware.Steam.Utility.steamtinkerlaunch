@@ -48,7 +48,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/sonic2kk/steamtinkerlaunch/
-        commit: 89af3c89e8bad3b9eb4c07f09796e34ad57c7492
+        commit: 8550ab26a712b7f5f6d0947070181446b9de61fd
       - type: file
         path: compatibilitytool.vdf
       - type: file
