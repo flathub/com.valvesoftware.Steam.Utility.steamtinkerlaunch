@@ -1,20 +1,19 @@
----
 name: jq
 config-opts:
   - --disable-maintainer-mode
   - --with-oniguruma=builtin
 sources:
   - type: git
-    url: https://github.com/stedolan/jq
-    tag: jq-1.6
-    commit: 2e01ff1fb69609540b2bdc4e62a60499f2b2fb8e
-  - type: script
-    commands: [ "autoreconf -fi" ]
-    dest-filename: "autogen.sh"
+    url: https://github.com/jqlang/jq/
+    tag: jq-1.8.1
+    commit: 4467af7068b1bcd7f882defff6e7ea674c5357f4
     x-checker-data:
       type: anitya
       project-id: 13252
       stable-only: true
       tag-template: jq-$version
+  - type: script
+    commands: [ "autoreconf -fi" ]
+    dest-filename: "autogen.sh"
 cleanup:
   - /bin/onig-config
