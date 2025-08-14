@@ -18,9 +18,6 @@ sources:
 modules:
   - name: boost
     buildsystem: simple
-    build-options:
-      env:
-        CMAKE_PREFIX_PATH: ${FLATPAK_DEST}
     build-commands:
       - ./bootstrap.sh --prefix=${FLATPAK_DEST} --with-libraries=date_time,filesystem,iostreams,program_options
       - ./b2 -j$FLATPAK_BUILDER_N_JOBS install
