@@ -1,7 +1,7 @@
 id: com.valvesoftware.Steam.Utility.steamtinkerlaunch
 runtime: com.valvesoftware.Steam
 runtime-version: stable
-sdk: org.freedesktop.Sdk//24.08
+sdk: org.freedesktop.Sdk//25.08
 build-extension: true
 separate-locales: false
 appstream-compose: false
