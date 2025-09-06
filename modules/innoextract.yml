@@ -1,5 +1,8 @@
 name: innoextract
 buildsystem: cmake-ninja
+build-options:
+  env:
+    CMAKE_POLICY_VERSION_MINIMUM: 3.5
 sources:
   - type: archive
     url: https://github.com/dscharrer/innoextract/releases/download/1.9/innoextract-1.9.tar.gz
