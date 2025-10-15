@@ -9,8 +9,8 @@ make-install-args:
   - NO_TCLTK=YesPlease
 sources:
   - type: archive
-    url: https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.51.0.tar.xz
-    sha256: 60a7c2251cc2e588d5cd87bae567260617c6de0c22dca9cdbfc4c7d2b8990b62
+    url: https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.51.1.tar.xz
+    sha256: a83fd9ffaed7eee679ed92ceb06f75b4615ebf66d3ac4fbdbfbc9567dc533f4a
     x-checker-data:
       type: anitya
       project-id: 5350
