@@ -8,8 +8,8 @@ make-install-args:
   - INSTALLMAN=${FLATPAK_DEST}/share/man
 sources:
   - type: archive
-    url: https://github.com/jordansissel/xdotool/archive/v3.20211022.1/xdotool-3.20211022.1.tar.gz
-    sha256: 82b15a944a5e82fee15e0f6116bd9f642bc3d0bb6989fc0ca5ad9dfe35de0847
+    url: https://github.com/jordansissel/xdotool/archive/v4.20251130.1/xdotool-4.20251130.1.tar.gz
+    sha256: a9837efca5ceb2c04f1bd276985d93960c5ea11eed9725c517ae3ebc3fc6dca7
     x-checker-data:
       type: anitya
       project-id: 8648
