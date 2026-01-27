@@ -26,7 +26,6 @@ modules:
   - modules/git.yml
   - modules/imagemagick.yml
   - modules/innoextract.yml
-  - modules/jq.yml
   - modules/p7zip.yml
   - modules/pev.yml
   - modules/rsync.yml
