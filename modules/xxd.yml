@@ -6,8 +6,8 @@ build-commands:
 sources:
   - type: git
     url: https://github.com/xyproto/tinyxxd/
-    tag: v1.3.11
-    commit: 1136538c85e698f5c0678fe6609123135443c411
+    tag: v1.3.12
+    commit: da4b9caf7b20718dbee5ef3c572ca1ce2fc8dde0
     x-checker-data:
       type: git
       tag-pattern: ^v([\d.]+)$
