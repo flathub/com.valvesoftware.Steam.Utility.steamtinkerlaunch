@@ -5,6 +5,7 @@ config-opts:
   - --disable-docs
   - --with-modules
   - --with-threads
+  - --without-heic
 sources:
   - type: archive
     url: https://github.com/ImageMagick/ImageMagick/archive/7.1.2-22.tar.gz
