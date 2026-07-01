@@ -2,10 +2,12 @@ name: git
 make-args:
   - INSTALL_SYMLINKS=1
   - NO_PERL=YesPlease
+  - NO_RUST=YesPlease
   - NO_TCLTK=YesPlease
 make-install-args:
   - INSTALL_SYMLINKS=1
   - NO_PERL=YesPlease
+  - NO_RUST=YesPlease
   - NO_TCLTK=YesPlease
 sources:
   - type: archive
