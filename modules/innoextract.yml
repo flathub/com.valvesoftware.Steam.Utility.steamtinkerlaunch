@@ -1,23 +1,31 @@
 name: innoextract
 buildsystem: cmake-ninja
+builddir: true
 build-options:
   env:
     CMAKE_POLICY_VERSION_MINIMUM: 3.5
 sources:
-  - type: archive
-    url: https://github.com/dscharrer/innoextract/releases/download/1.9/innoextract-1.9.tar.gz
-    sha256: 6344a69fc1ed847d4ed3e272e0da5998948c6b828cb7af39c6321aba6cf88126
-    x-checker-data:
-      type: anitya
-      project-id: 8646
-      stable-only: true
-      url-template: https://github.com/dscharrer/innoextract/releases/download/$version/innoextract-$version.tar.gz
+  - type: git
+    url: https://github.com/dscharrer/innoextract/
+    commit: 6e9e34ed0876014fdb46e684103ef8c3605e382e
+#  - type: archive
+#    url: https://github.com/dscharrer/innoextract/releases/download/1.9/innoextract-1.9.tar.gz
+#    sha256: 6344a69fc1ed847d4ed3e272e0da5998948c6b828cb7af39c6321aba6cf88126
+#    x-checker-data:
+#      type: anitya
+#      project-id: 8646
+#      stable-only: true
+#      url-template: https://github.com/dscharrer/innoextract/releases/download/$version/innoextract-$version.tar.gz
   # Patch innoextract failing to build with boost 1.85+: https://github.com/dscharrer/innoextract/pull/169
-  - type: patch
-    path: ../patches/innoextract-169.patch
+  # uneeded if built from git instead of archive
+#  - type: patch
+#    path: ../patches/innoextract-169.patch
   # Patch innoextract failing to build with boost 1.89+: https://github.com/dscharrer/innoextract/pull/199
   - type: patch
     path: ../patches/innoextract-199.patch
+  # Patch innoextract to add support for Inno Setup 6.4.2 through 6.7.1: https://github.com/dscharrer/innoextract/pull/210
+  - type: patch
+    path: ../patches/innoextract-210.patch
 modules:
   - name: boost
     buildsystem: simple
