@@ -48,6 +48,9 @@ modules:
       - type: git
         url: https://github.com/sonic2kk/steamtinkerlaunch/
         commit: 8550ab26a712b7f5f6d0947070181446b9de61fd
+      # Patch STL to work with YAD v15 due to now deprecated elements: https://github.com/sonic2kk/steamtinkerlaunch/pull/1314
+      - type: patch
+        path: patches/steamtinkerlaunch-1314.patch
       - type: file
         path: compatibilitytool.vdf
       - type: file
